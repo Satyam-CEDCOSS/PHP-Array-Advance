@@ -1,3 +1,4 @@
+<!-- Main Dataset -->
 <?php
 $products = array(
     "Electronics" => array(
@@ -74,6 +75,7 @@ $products = array(
     )
 );
 
+// TASK 1
 echo "<h1>List all products in this format</h1>";
 echo "<table><tr><th>Category</th><th>Subcategory</th><th>ID</th><th>Name</th><th>Brand</th></tr>";
 foreach ($products as $product_name => $subproduct) {
@@ -84,11 +86,10 @@ foreach ($products as $product_name => $subproduct) {
     }
 }
 echo "</table>";
-
-
 echo "<br>";
 echo "<br>";
 
+// TASK 2
 echo "<h1>List all products in Mobile subcategory in same format as in point 1</h1>";
 echo "<table><tr><th>Category</th><th>Subcategory</th><th>ID</th><th>Name</th><th>Brand</th></tr>";
 foreach ($products as $product_name => $subproduct) {
@@ -101,10 +102,10 @@ foreach ($products as $product_name => $subproduct) {
     }
 }
 echo "</table>";
-
 echo "<br>";
 echo "<br>";
 
+// TASK 3
 echo "<h1>List all products with their id, name, subcategory and category with brand name = 'Samsung'</h1>";
 foreach ($products as $product_name => $subproduct) {
     foreach ($subproduct as $subproduct_name => $parameter) {
@@ -119,10 +120,10 @@ foreach ($products as $product_name => $subproduct) {
         }
     }
 }
-
 echo "<br>";
 echo "<br>";
 
+// TASK 4
 echo "<h1>Delete product with id = PR003</h1>";
 echo "<table><tr><th>Category</th><th>Subcategory</th><th>ID</th><th>Name</th><th>Brand</th></tr>";
 foreach ($products as $product_name => $subproduct) {
@@ -135,10 +136,10 @@ foreach ($products as $product_name => $subproduct) {
     }
 }
 echo "</table>";
-
 echo "<br>";
 echo "<br>";
 
+// TASK 5
 echo "<h1>Update product name = 'BIG-555' with id = PR002</h1>";
 echo "<table><tr><th>Category</th><th>Subcategory</th><th>ID</th><th>Name</th><th>Brand</th></tr>";
 foreach ($products as $product_name => $subproduct) {
